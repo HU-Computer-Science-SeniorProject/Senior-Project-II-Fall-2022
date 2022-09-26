@@ -18,18 +18,18 @@ Freshman Issues
 
 ### Assigned Team: Code Crew
 Matriculation Issues
-Advisor Scheduling and Course Selection (Satisfy registration reqs for advisor)
-Registration Processing
-Pin Distribution
-Error Resolution
+* Advisor Scheduling and Course Selection (Satisfy registration reqs for advisor)
+* Registration Processing
+    - Pin Distribution
+    - Error Resolution
 
 ### Assigned Team: Team ACE
-Graduation Clearance
-Checklist Maintenance
-Part-time Student Registration
-Generate Graduation Academic Clearance List
+* Graduation Clearance
+* Checklist Maintenance
+* Part-time Student Registration
+* Generate Graduation Academic Clearance List
 
 ### Assigned Team: MVPs
 Post-Grad Process
-Students add LinkedIn Information for Dr. Keeling
-Exit Interview
+* Students add LinkedIn Information for Dr. Keeling
+* Exit Interview
