@@ -8,7 +8,7 @@ They should be able to more easily see information from the perspective of stude
 A professor/advisor should be able to check how many students they have who could possibly graduate
 Students should be able to say they want to register for classes and receive a copy of their checklist, and a meeting with their advisor
 We need to create a set of requirements
-Each team would take different functionality
+Each team would take different functionality.
 
 ### 4 pieces to complete between teams
 ### Assigned Team: Bison Madness
