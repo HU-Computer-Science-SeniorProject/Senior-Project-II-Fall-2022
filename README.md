@@ -40,4 +40,4 @@ Each team would take different functionality.
 
 [Group Information Sheet](https://docs.google.com/spreadsheets/d/186qrw8JsiF5gFs9qZuT0Cxj1wJEGNcYDOW_w11vatzI/edit?usp=sharing)
 
-[CS Advising Website] (https://howardu.sharepoint.com/sites/CSAdvising)
+[CS Advising Website](https://howardu.sharepoint.com/sites/CSAdvising)
