@@ -13,8 +13,8 @@ Each team would take different functionality
 ### 4 pieces to complete between teams
 ### Assigned Team: Bison Madness
 Freshman Issues
-Transfer/International/Consortium/Summer School Student Credit Entry & Validation
-Form tracking and storage for international students (OPT & CPT)
+* Transfer/International/Consortium/Summer School Student Credit Entry & Validation
+* Form tracking and storage for international students (OPT & CPT)
 
 ### Assigned Team: Code Crew
 Matriculation Issues
