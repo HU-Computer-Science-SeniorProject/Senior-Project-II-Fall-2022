@@ -32,3 +32,7 @@ Each team would take different functionality.
 **Post-Grad Process**
 * Students add LinkedIn Information for Dr. Keeling
 * Exit Interview
+
+
+[Project Details Documentation]([https://pages.github.com/](https://docs.google.com/document/d/1zDgmPmvEXwdtrTu6SaQdG77AkgH1PaIDNpe92wG2bnI/edit#)).
+
