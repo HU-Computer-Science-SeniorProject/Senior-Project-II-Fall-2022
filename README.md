@@ -10,26 +10,25 @@ Students should be able to say they want to register for classes and receive a c
 We need to create a set of requirements
 Each team would take different functionality.
 
-### 4 pieces to complete between teams
 ### Assigned Team: Bison Madness
-Freshman Issues
+**Freshman Issues**
 * Transfer/International/Consortium/Summer School Student Credit Entry & Validation
 * Form tracking and storage for international students (OPT & CPT)
 
 ### Assigned Team: Code Crew
-Matriculation Issues
+**Matriculation Issues**
 * Advisor Scheduling and Course Selection (Satisfy registration reqs for advisor)
 * Registration Processing
     - Pin Distribution
     - Error Resolution
 
 ### Assigned Team: Team ACE
-* Graduation Clearance
+**Graduation Clearance**
 * Checklist Maintenance
 * Part-time Student Registration
 * Generate Graduation Academic Clearance List
 
 ### Assigned Team: MVPs
-Post-Grad Process
+**Post-Grad Process**
 * Students add LinkedIn Information for Dr. Keeling
 * Exit Interview
