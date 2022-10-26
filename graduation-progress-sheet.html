@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <style>
 header{
   font-weight: bold;
@@ -44,15 +42,13 @@ button {
   font-family: arial-narrow;
 }
 </style>
-  
 <header>
-    <head>
-        <p id="header-title">
-            Graduation Progress
-            <button type="button" id="adv-approve-btn">Approve</button>
-            <button type="button" id="adv-reject-btn">Reject</button>
-        </p>
-    </head>
+    <p id="header-title">
+        Graduation Progress
+        <button type="button" id="adv-approve-btn">Approve</button>
+        <button type="button" id="adv-reject-btn">Reject</button>
+        <button type="button" id="st-submit-btn">Reject</button>
+    </p>
     <table id="student-details">
         <tr>
             <td>College</td>
@@ -80,146 +76,322 @@ button {
             <td>$UserClassification</td>
         </tr>
         <tr>
-          <td>Registration Status</td>
-          <td>&nbsp;</td>
-          <td>$UserRegistrationStatus</td>
+            <td>Registration Status</td>
+            <td>&nbsp;</td>
+            <td>$UserRegistrationStatus</td>
         </tr>
         <tr>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
     </table>
 </header>
-  
+
 <body>
-  <table id="progress-table">
-    <!--YEAR HEADER-->
-    <tr>
-      <td id="year-header" colspan="8">Freshman</td>
-      <td id="year-header" colspan="8">Sophomore</td>
-    </tr>
+    <table id="progress-table">
+        <!--YEAR HEADER-->
+        <tr>
+            <td id="year-header" colspan="8">Freshman</td>
+            <td id="year-header" colspan="8">Sophomore</td>
+        </tr>
 
-    <!--SEMESTER HEADER-->
-    <tr>
-      <!-- Freshman -->
-      <td id="progress-table-header"colspan="4">Fall</td>
-      <td id="progress-table-header"colspan="4">Spring</td>
-      <!-- Sophomore -->
-      <td id="progress-table-header"colspan="4">Fall</td>
-      <td id="progress-table-header"colspan="4">Spring</td>
-    </tr>
-    
-  <!--DETAILS HEADER-->
-    <tr>
-    <!-- Freshman - Fall -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Freshman - Spring -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Sophomore - Fall -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Sophomore - Spring -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    </tr>
-    
-  <!--DETAILS DATA-->
-    <tr>
-    <!-- Freshman - Fall -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Freshman - Spring -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Sophomore - Fall -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Sophomore - Spring -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    </tr>
+        <!--SEMESTER HEADER-->
+        <tr>
+            <!-- Freshman -->
+            <td id="progress-table-header" colspan="4">Fall</td>
+            <td id="progress-table-header" colspan="4">Spring</td>
+            <!-- Sophomore -->
+            <td id="progress-table-header" colspan="4">Fall</td>
+            <td id="progress-table-header" colspan="4">Spring</td>
+        </tr>
+
+        <!--DETAILS HEADER-->
+        <!--Each Row represents 1 class for both fall and spring-->
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+        </tr>
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Freshman - Fall -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Freshman - Spring -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Sophomore - Fall -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Sophomore - Spring -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+        </tr>
 
 
-    <!--YEAR HEADER-->
-    <tr>
-      <td id="year-header" colspan="8">Junior</td>
-      <td id="year-header" colspan="8">Senior</td>
-    </tr>
 
-    <!--SEMESTER HEADER-->
-    <tr>
-      <!-- Junior -->
-      <td id="progress-table-header"colspan="4">Fall</td>
-      <td id="progress-table-header"colspan="4">Spring</td>
-      <!-- Senior -->
-      <td id="progress-table-header"colspan="4">Fall</td>
-      <td id="progress-table-header"colspan="4">Spring</td>
-    </tr>
-    
-  <!--DETAILS HEADER-->
-    <tr>
-    <!-- Junior - Fall -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Junior - Spring -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Senior - Fall -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    <!-- Senior - Spring -->
-      <td id="progress-table-header">Course Number</td>
-      <td id="progress-table-header">Course Title</td>
-      <td id="progress-table-header">Credits</td>
-      <td id="progress-table-header">Grade</td>
-    </tr>
-    
-  <!--DETAILS DATA-->
-    <tr>
-    <!-- Junior - Fall -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Junior - Spring -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Senior - Fall -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    <!-- Senior - Spring -->
-      <td id="progress-table-data">$CrsNumb</td>
-      <td id="progress-table-data">$CrsTitleHere</td>
-      <td id="progress-table-data">$CrsCrd</td>
-      <td id="progress-table-data">$CrsGrd</td>
-    </tr>
-  </table>
+        <!--YEAR HEADER-->
+        <tr>
+            <td id="year-header" colspan="8">Junior</td>
+            <td id="year-header" colspan="8">Senior</td>
+        </tr>
+
+        <!--SEMESTER HEADER-->
+        <tr>
+            <!-- Junior -->
+            <td id="progress-table-header" colspan="4">Fall</td>
+            <td id="progress-table-header" colspan="4">Spring</td>
+            <!-- Senior -->
+            <td id="progress-table-header" colspan="4">Fall</td>
+            <td id="progress-table-header" colspan="4">Spring</td>
+        </tr>
+
+        <!--DETAILS HEADER-->
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-header">Course Number</td>
+            <td id="progress-table-header">Course Title</td>
+            <td id="progress-table-header">Credits</td>
+            <td id="progress-table-header">Grade</td>
+        </tr>
+
+        <!--DETAILS DATA-->
+        <!--Each Row represents 1 class for both fall and spring-->
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+            <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+            <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+            <td id="progress-table-data" contenteditable="true"> </td>
+        </tr>
+        <tr>
+            <!-- Junior - Fall -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Junior - Spring -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Senior - Fall -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <!-- Senior - Spring -->
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">&nbsp;</td>
+            <td id="progress-table-data">$TtlCrsCrd</td>
+            <td id="progress-table-data">&nbsp;</td>
+        </tr>
+    </table>
 </body>
-</html>
