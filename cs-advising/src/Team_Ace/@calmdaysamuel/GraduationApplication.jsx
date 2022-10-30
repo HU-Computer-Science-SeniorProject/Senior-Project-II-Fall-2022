@@ -1,7 +1,7 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
-export function GraduationAppliation() {
+export function GraduationApplication() {
   return (
     <div>
       <Header />

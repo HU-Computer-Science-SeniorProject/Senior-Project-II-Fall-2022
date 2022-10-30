@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { GraduationAppliation } from "./Team_Ace/@calmdaysamuel/GraduationApplication";
 import { GraduationHome } from "./Team_Ace/@calmdaysamuel/GraduationHome";
 import {
   createBrowserRouter,
