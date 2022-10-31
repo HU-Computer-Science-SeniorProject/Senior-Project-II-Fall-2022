@@ -1,29 +1,30 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { GraduationAppliation } from "./Team_Ace/@calmdaysamuel/GraduationApplication";
 import { GraduationHome } from "./Team_Ace/@calmdaysamuel/GraduationHome";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { GraduationApplication } from "./Team_Ace/@calmdaysamuel/GraduationApplication";
+import { GraduationChecklist } from "./Team_Ace/@dInquisitor/GraduationChecklist";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <GraduationHome />,
+  },
+  {
+    path: "/graduation",
+    element: <GraduationHome />,
+  },
+  {
+    path: "/graduation-application",
+    element: <GraduationApplication />,
+  },
+  {
+    path: "/graduation-checklist",
+    element: <GraduationChecklist />,
+  },
+]);
 
 function App() {
-  return (
-    // <GraduationAppliation />
-    <GraduationHome />
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
