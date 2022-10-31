@@ -26,9 +26,10 @@ Each team would take different functionality.
 
 ### Assigned Team: Team ACE
 **Graduation Clearance**
-* Checklist Maintenance
+* Graduation Status
 * Part-time Student Registration
 * Generate Graduation Academic Clearance List
+* Graduation Application Submission
 
 ### Assigned Team: MVPs
 **Post-Grad Process**
