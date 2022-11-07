@@ -8,6 +8,8 @@ function onSignIn(googleUser) {
   
   // auth2 is initialized with gapi.auth2.init() and a user is signed in.
   
+
+  // Variables of all metadata that can be saved to database
   if (auth2.isSignedIn.get()) {
     var profile = auth2.currentUser.get().getBasicProfile();
     console.log('ID: ' + profile.getId());
