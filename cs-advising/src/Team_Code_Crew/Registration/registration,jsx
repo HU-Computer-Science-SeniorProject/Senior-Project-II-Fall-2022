@@ -1,0 +1,4 @@
+import "./matriculation.css";
+
+
+export default function registration() {

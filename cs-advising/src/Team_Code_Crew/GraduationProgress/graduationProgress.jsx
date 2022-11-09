@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import "./graduationProgress.css";
 
 
