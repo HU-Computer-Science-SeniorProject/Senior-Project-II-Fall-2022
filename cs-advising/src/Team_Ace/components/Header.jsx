@@ -1,7 +1,8 @@
 import "./Header.css";
-
+import Hulogo from '../../CodeCrew/@c-admas18/Hulogo.png'
 export function Header() {
   const routes = [
+    { title: "Home", link: "/" },
     { title: "Matriculation", link: "/matriculation" },
     {
       title: "Team 2",
@@ -19,7 +20,7 @@ export function Header() {
   return (
     <div className="header">
       <div className="header_top">
-        <div className="howard_logo"></div>
+      <img className="logo_img" src={Hulogo} alt="CS Advising"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         <div className="header_title">Computer Science Advising</div>
         <div className="headaer_login"></div>
       </div>

@@ -4,11 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { GraduationApplication } from "./Team_Ace/@calmdaysamuel/GraduationApplication";
 import { MatriculationHome } from "./CodeCrew/@c-admas18/MatriculationHome";
 import { AdvisorMeeting } from "./CodeCrew/@c-admas18/AdvisorMeeting";
+import { Home } from "./CodeCrew/@c-admas18/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <GraduationHome />,
+    element: <Home />,
   },
   {
     path: "/graduation",

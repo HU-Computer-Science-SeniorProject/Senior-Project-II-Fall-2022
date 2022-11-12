@@ -10,7 +10,7 @@
 
 .header_bottom {
   padding: 12px;
-  background-color: #b64141;
+  background-color: #bc1919;
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -18,13 +18,14 @@
 
 .header_top {
   padding: 12px;
-  background-color: #003a63;
+  background-color: #020563;
 }
 
 .header_title {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 45px;
   color: white;
+  font-family: "Georgia";
   text-align: center;
 }
 .header {
