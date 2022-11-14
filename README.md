@@ -12,10 +12,10 @@ Each team would take different functionality.
 
 ### Assigned Team: Bison Madness
 **Freshman Issues**
-* Transfer/International/Consortium/Summer School Student Credit Entry & Validation
+* Transfer/International/Consortium/Summer School Student Credit Entry & Validation 
 * Form tracking and storage for international students (OPT & CPT)
 * Shared database
-* Login page
+* Login page [x]
 
 ### Assigned Team: Code Crew
 **Matriculation Issues**
