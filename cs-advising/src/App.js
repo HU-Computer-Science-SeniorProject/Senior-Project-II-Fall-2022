@@ -1,10 +1,11 @@
 import "./App.css";
+import { Home } from "../src/Home";
 import { GraduationHome } from "./Team_Ace/@calmdaysamuel/GraduationHome";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { GraduationApplication } from "./Team_Ace/@calmdaysamuel/GraduationApplication";
-import { MatriculationHome } from "./CodeCrew/@c-admas18/MatriculationHome";
-import { AdvisorMeeting } from "./CodeCrew/@c-admas18/AdvisorMeeting";
-import { Home } from "./CodeCrew/@c-admas18/Home";
+import { MatriculationHome } from "./CodeCrew/Components/MatriculationHome";
+import { AdvisorMeeting } from "./CodeCrew/Advising/AdvisorMeeting";
+import { GraduationProgress } from "./CodeCrew/GraduationProgress/GraduationProgress";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
     element: <MatriculationHome />,
   },
   {
-    path: "/matriculation-advisormeeting",
+    path: "/matriculation/graduation-progress",
+    element: <GraduationProgress />,
+  },
+  {
+    path: "/matriculation/advisor-meeting",
     element: <AdvisorMeeting />,
   },
 ]);

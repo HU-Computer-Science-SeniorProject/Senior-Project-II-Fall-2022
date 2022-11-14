@@ -1,10 +1,8 @@
-import { useNavigate } from 'react-router-dom';
-
+import { Header } from "../../Team_Ace/components/Header";
+import { Footer } from "../../Team_Ace/components/Footer";
 import "./graduationProgress.css";
 
 export default function creditOverloadError() {
-
-    const navigate = useNavigate();
 
     const creditOverload = () => {
         navigate('/advisorApproval');
@@ -20,11 +18,13 @@ export default function creditOverloadError() {
 
     return (
         <div>
+            <Header />
             <!--This error should be on the error resolution page--->
             <button type="button" id="cdt-ovrld-btn" onClick={creditOverload}>Credit Overload</button>
 
 
             <button type="button" id="stu-rqst-crd-ovrld-btn" onClick={overloadErrorRequest}>Request help with Credit Overload</button>
+            <Footer />
         </div>
     );
 }
