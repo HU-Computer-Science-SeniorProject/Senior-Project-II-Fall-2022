@@ -39,9 +39,9 @@ export function MatriculationHome() {
                     <ul>
                         {registration_routes.map((route) => {
                             return (
-                                <div><li href={route.link}>
+                                <div><a href={route.link}>
                                     {route.title}
-                                </li></div>
+                                </a></div>
                             );
                         })}
                     </ul>
@@ -49,9 +49,9 @@ export function MatriculationHome() {
                     <ul>
                         {advising_routes.map((route) => {
                             return (
-                                <div><li href={route.link}>
+                                <div><a href={route.link}>
                                     {route.title}
-                                </li></div>
+                                </a></div>
                             );
                         })}
                     </ul>
