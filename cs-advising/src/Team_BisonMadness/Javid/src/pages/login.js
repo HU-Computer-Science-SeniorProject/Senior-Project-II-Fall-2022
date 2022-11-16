@@ -1,7 +1,7 @@
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 
-const main = () => {
+const login = () => {
   return (
     <Authenticator>
       {({ signOut }) => (
@@ -15,4 +15,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default login;

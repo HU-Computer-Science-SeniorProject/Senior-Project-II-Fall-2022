@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
-import Premium from "./pages/main";
+import Login from "./pages/login";
 
 function App() {
   return (
@@ -20,14 +20,14 @@ function App() {
           <NavLink className="content" activeClassName="active" to="/about">
             About
           </NavLink>
-          <NavLink className="content" activeClassName="active" to="/main">
-            Main
+          <NavLink className="content" activeClassName="active" to="/login">
+            Login
           </NavLink>
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/main" element={<Premium />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>

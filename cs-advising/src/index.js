@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./Team_BisonMadness/Javid/src/index.css";
+import App from "./Team_BisonMadness/Javid/src/App";
+import reportWebVitals from "./Team_BisonMadness/Javid/src/reportWebVitals";
+import Amplify from "aws-amplify";
+import config from "./Team_BisonMadness/Javid/src/aws-exports";
+Amplify.configure(config);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

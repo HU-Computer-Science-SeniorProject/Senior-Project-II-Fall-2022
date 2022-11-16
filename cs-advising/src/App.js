@@ -5,11 +5,17 @@ import { GraduationApplication } from "./Team_Ace/@calmdaysamuel/GraduationAppli
 import { MatriculationHome } from "./CodeCrew/@c-admas18/MatriculationHome";
 import { AdvisorMeeting } from "./CodeCrew/@c-admas18/AdvisorMeeting";
 import { Home } from "./CodeCrew/@c-admas18/Home";
+import login from "./Team_BisonMadness/Javid/src/pages/login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <login />,
   },
   {
     path: "/graduation",
