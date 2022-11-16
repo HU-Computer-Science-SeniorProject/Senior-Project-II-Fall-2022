@@ -12,10 +12,10 @@ Each team would take different functionality.
 
 ### Assigned Team: Bison Madness
 **Freshman Issues**
-* Transfer/International/Consortium/Summer School Student Credit Entry & Validation
-* Form tracking and storage for international students (OPT & CPT)
-* Shared database
-* Login page
+- [ ] Transfer/International/Consortium/Summer School Student Credit Entry & Validation 
+- [ ] Form tracking and storage for international students (OPT & CPT)
+- [x] Shared database
+- [x] Login page
 
 ### Assigned Team: Code Crew
 **Matriculation Issues**
@@ -26,9 +26,10 @@ Each team would take different functionality.
 
 ### Assigned Team: Team ACE
 **Graduation Clearance**
-* Checklist Maintenance
+* Graduation Status
 * Part-time Student Registration
 * Generate Graduation Academic Clearance List
+* Graduation Application Submission
 
 ### Assigned Team: MVPs
 **Post-Grad Process**
