@@ -4,6 +4,7 @@ import "./MatriculationHome.css";
 export function MatriculationHome() {
   const routes = [
     { title: "Schedule Advisor Meeting", link: "/matriculation-advisormeeting" },
+    //{ title: "Pin Distribution", link: ""}
   ];
   return (
     <div className="gh">
@@ -13,9 +14,12 @@ export function MatriculationHome() {
          <div className="grad_home_routes ">
         {routes.map((route) => {
           return (
-            <a href={route.link} className="grad_routes">
+            <>
+              <a href={route.link} className="grad_routes">
               {route.title}
-            </a>
+              </a>
+              <a href="/matriculation-pin" className="grad_routes">Pin Distribution</a>
+            </>
           );
         })}
       </div>
