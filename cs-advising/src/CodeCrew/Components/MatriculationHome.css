@@ -18,14 +18,58 @@
 }
 .gh_body {
   max-width: 800px;
-  margin: auto;
   margin-top: 48px;
   margin-bottom: 300px;
+  margin-left: 300px;
 }
 .main_gh_title {
-  font-size: 36px;
-  font-weight: 900;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
 }
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin-left: 100px;
+}
+
+.sidenav-parent {
+    background: #003A63;
+    /*padding: 0.625rem 0.625rem 0.625rem 2.375rem !important;*/
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.sidenav {
+    height: 50%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    margin: auto;
+    margin-top: 220px;
+    margin-left: 20px;
+    margin-bottom: 320px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sidenav ul,li {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 5px;
+}
+.sidenav div:hover {
+    font-weight: normal;
+    font-style: italic;
+}
+
 .matric_title {
   font-size: 36px;
   font-weight: 900;

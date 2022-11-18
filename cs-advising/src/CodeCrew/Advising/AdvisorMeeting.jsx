@@ -1,6 +1,7 @@
 import { Header } from "../../Team_Ace/components/Header";
 import { Footer } from "../../Team_Ace/components/Footer";
-import "./MatriculationHome.css";
+import "../../CodeCrew/Components/MatriculationHome.css";
+
 export function AdvisorMeeting() {
   return (
     <div className="gh">

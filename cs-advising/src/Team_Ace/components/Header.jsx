@@ -1,5 +1,6 @@
 import "./Header.css";
-import Hulogo from '../../CodeCrew/@c-admas18/Hulogo.png'
+import Hulogo from '../../CodeCrew/Advising/Hulogo.png'
+
 export function Header() {
   const routes = [
     { title: "Home", link: "/" },

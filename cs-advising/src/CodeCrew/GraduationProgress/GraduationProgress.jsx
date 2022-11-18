@@ -1,30 +1,61 @@
-import { useNavigate } from 'react-router-dom';
-import "./graduationProgress.css";
+import { Header } from "../../Team_Ace/components/Header";
+import { Footer } from "../../Team_Ace/components/Footer";
+import "./GraduationProgress.css";
 
 
-export default function graduationChecklistHeader() {
-    const navigate = useNavigate();
+export function GraduationProgress() {
+    /*const grad_prog_routes = [
+        { title: "Approve", link: "/advisorApproval" },
+        { title: "Reject", link: "/advisorRejection" },
+        { title: "Submit", link: "/studentSubmission" },
+    ];
 
-    const submitAdvAppr = () => {
-        navigate('/advisorApproval');
-    };
 
-    const submitAdvRej = () => {
-        navigate('/advisorRejection');
-    };
+    const advisorApproval = () => {
+        return (
+            <div>
+                <h2>Your Approval has been sent to your student</h2>
+            </div>
+        );
+    }
 
-    const stuSubmit = () => {
-        navigate('/studentSubmission');
-    };
+
+    const advisorRejection = () => {
+        return (
+            <div>
+                <h2>Your Rejection has been sent to your student</h2>
+                <p>Please enter your comments below on what your student should fix before approval below </p>
+                <p contenteditable="true">&nbsp;</p>
+            </div>
+        );
+
+    }
+
+    const studentSubmission = () => {
+        return (
+            <div>
+                <h2>Your Graduation Checklist has been sent to your advisor for review</h2>
+            </div>
+        );
+    }*/
 
 
     return (
-        <header>
+        <div>
+        <Header />
+            <header>
             <p id="header-title">
                 Graduation Progress
-                <button type="button" id="adv-approve-btn" onClick={submitAdvAppr}>Approve</button>
+                {/*<button type="button" id="adv-approve-btn">Approve</button>
                 <button type="button" id="adv-reject-btn" onClick={submitAdvRej}>Reject</button>
-                <button type="button" id="st-submit-btn" onClick={stuSubmit}>Submit</button>
+                <button type="button" id="st-submit-btn" onClick={stuSubmit}>Submit</button>*/}
+                {/*{grad_prog_routes.map((route) => {
+                    return (
+                        <a href={route.link} className="header_route">
+                            {route.title}
+                        </a>
+                    );
+                })}*/}
             </p>
             <table id="student-details">
                 <tr>
@@ -62,148 +93,144 @@ export default function graduationChecklistHeader() {
                 </tr>
             </table>
         </header>
-    );
-}
 
-export function graduationChecklist() {
-    return (
         <body>
             <table id="progress-table">
-                //YEAR HEADER
+                {/*YEAR HEADER*/}
                 <tr>
                     <td id="year-header" colspan="8">Freshman</td>
                     <td id="year-header" colspan="8">Sophomore</td>
                 </tr>
 
-                //SEMESTER HEADER
+                {/*//SEMESTER HEADER*/}
                 <tr>
-                    //Freshman
+                    {/*//Freshman*/}
                     <td id="progress-table-header" colspan="4">Fall</td>
                     <td id="progress-table-header" colspan="4">Spring</td>
-                    //Sophomore
+                    {/*//Sophomore*/}
                     <td id="progress-table-header" colspan="4">Fall</td>
                     <td id="progress-table-header" colspan="4">Spring</td>
                 </tr>
 
-                /*DETAILS HEADER
-                Each Row represents 1 class for both fall and spring*/
+                {/*DETAILS HEADER
+                Each Row represents 1 class for both fall and spring*/}
                 <tr>
-                    //Freshman - Fall
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    // Freshman - Spring
+                    {/*// Freshman - Spring*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    //Sophomore - Fall
+                    {/*//Sophomore - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    //Sophomore - Spring
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
                 </tr>
                 <tr>
-                    //Freshman - Fall
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Freshman - Spring
+                    {/*//Freshman - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Fall
+                    {/*//Sophomore - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Spring
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                </tr>
-                <tr>
-                    //Freshman - Fall
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Freshman - Spring
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Fall
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Spring 
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    //Freshman - Fall
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Freshman - Spring 
+                    {/*//Freshman - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Fall 
+                    {/*//Sophomore - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Spring
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                </tr>
-                <tr>
-                    //Freshman - Fall
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Freshman - Spring 
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Fall 
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Sophomore - Spring 
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    //Freshman - Fall 
+                    {/*//Freshman - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Freshman - Spring*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*Sophomore - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Sophomore - Spring*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                </tr>
+                <tr>
+                    {/*//Freshman - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Freshman - Spring*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*Sophomore - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Sophomore - Spring*/} 
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                </tr>
+                <tr>
+                    {/*//Freshman - Fall*/} 
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
-                    //Freshman - Spring 
+                    {/*//Freshman - Spring*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
@@ -213,7 +240,7 @@ export function graduationChecklist() {
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
-                    //Sophomore - Spring
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
@@ -222,186 +249,161 @@ export function graduationChecklist() {
 
 
 
-                //YEAR HEADER
+               {/* //YEAR HEADER*/}
                 <tr>
                     <td id="year-header" colspan="8">Junior</td>
                     <td id="year-header" colspan="8">Senior</td>
                 </tr>
 
-                //SEMESTER HEADER
+                {/*//SEMESTER HEADER*/}
                 <tr>
-                    //Junior
+                    {/*//Junior*/}
                     <td id="progress-table-header" colspan="4">Fall</td>
                     <td id="progress-table-header" colspan="4">Spring</td>
-                    //Senior
+                    {/*//Senior*/}
                     <td id="progress-table-header" colspan="4">Fall</td>
                     <td id="progress-table-header" colspan="4">Spring</td>
                 </tr>
 
-                //DETAILS HEADER
+                {/*//DETAILS HEADER*/}
                 <tr>
-                    //Junior - Fall 
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    //Junior - Spring
+                    {/*//Junior - Spring*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    //Senior - Fall
+                    {/*//Senior - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    //Senior - Spring 
+                    {/*//Senior - Spring*/} 
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
                 </tr>
 
-                /*DETAILS DATA
-                Each Row represents 1 class for both fall and spring*/
+                {/*DETAILS DATA
+                Each Row represents 1 class for both fall and spring*/}
                 <tr>
-                    // Junior - Fall 
+                    {/*// Junior - Fall */}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Junior - Spring 
+                    {/*//Junior - Spring*/} 
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Fall 
+                    {/*//Senior - Fall*/} 
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Spring 
+                    {/*//Senior - Spring*/} 
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    //Junior - Fall
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Junior - Spring 
+                    {/*//Junior - Spring*/} 
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Fall 
+                    {/*//Senior - Fall*/} 
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Spring
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                </tr>
-                <tr>
-                    //Junior - Fall 
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Junior - Spring
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Fall
-                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
-                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
-                    <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Spring
+                    {/*//Senior - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    //Junior - Fall 
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Junior - Spring
+                    {/*//Junior - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Fall
+                    {/*//Senior - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    //Senior - Spring
+                    {/*//Senior - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    //Junior - Fall 
+                    {/*//Junior - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Junior - Spring*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Senior - Fall*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                    {/*//Senior - Spring*/}
+                    <td id="progress-table-data" contenteditable="true">$CrsNum</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
+                    <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
+                    <td id="progress-table-data" contenteditable="true"> </td>
+                </tr>
+                <tr>
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
-                    //Junior - Spring
+                    {/*//Junior - Spring*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
-                    //Senior - Fall
+                    {/*//Senior - Fall*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
-                    //Senior - Spring
+                    {/*//Senior - Spring*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>
                     <td id="progress-table-data">&nbsp;</td>
                 </tr>
             </table>
-        </body>
-    );
-}
-
-function advisorApproval() {
-    return (
-        <div>
-            <h2>Your Approval has been sent to your student</h2>
-        </div>
-    );
-}
-
-function advisorRejection() {
-    return (
-        <div>
-            <h2>Your Rejection has been sent to your student</h2>
-            <p>Please enter your comments below on what your student should fix before approval below </p>
-            <p contenteditable="true">&nbsp;</p>
-        </div>
-    );
-
-}
-
-function studentSubmission() {
-    return (
-        <div>
-            <h2>Your Graduation Checklist has been sent to your advisor for review</h2>
+            </body>
+            <Footer />
         </div>
     );
 }
