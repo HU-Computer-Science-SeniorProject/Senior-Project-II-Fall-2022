@@ -115,7 +115,7 @@ export function GraduationProgress() {
                 {/*DETAILS HEADER
                 Each Row represents 1 class for both fall and spring*/}
                 <tr>
-                    {/*{/*//Freshman - Fall*/}*/}
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
@@ -130,14 +130,14 @@ export function GraduationProgress() {
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
-                    {/*{/*//Sophomore - Spring*/}*/}
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
                     <td id="progress-table-header">Grade</td>
                 </tr>
                 <tr>
-                    {/*{/*//Freshman - Fall*/}*/}
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
@@ -152,14 +152,14 @@ export function GraduationProgress() {
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    {/*{/*//Sophomore - Spring*/}*/}
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    {/*{/*//Freshman - Fall*/}*/}
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
@@ -174,19 +174,19 @@ export function GraduationProgress() {
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    {/*{/*//Sophomore - Spring*/} */}
+                    {/*//Sophomore - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    {/*{/*//Freshman - Fall*/}*/}
+                    {/*//Freshman - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
                     <td id="progress-table-data" contenteditable="true"> </td>
-                    {/*{/*//Freshman - Spring*/}*/}
+                    {/*//Freshman - Spring*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
@@ -267,7 +267,7 @@ export function GraduationProgress() {
 
                 {/*//DETAILS HEADER*/}
                 <tr>
-                    {/*{/*//Junior - Fall*/} */}
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-header">Course Number</td>
                     <td id="progress-table-header">Course Title</td>
                     <td id="progress-table-header">Credits</td>
@@ -336,7 +336,7 @@ export function GraduationProgress() {
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    {/*{/*//Junior - Fall*/} */}
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
@@ -358,7 +358,7 @@ export function GraduationProgress() {
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    {/*{/*//Junior - Fall*/} */}
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data" contenteditable="true">$CrsNum</td>
                     <td id="progress-table-data" contenteditable="true">$CrsTitle</td>
                     <td id="progress-table-data" contenteditable="true">$CrsCrd</td>
@@ -380,7 +380,7 @@ export function GraduationProgress() {
                     <td id="progress-table-data" contenteditable="true"> </td>
                 </tr>
                 <tr>
-                    {/*{/*//Junior - Fall*/} */}
+                    {/*//Junior - Fall*/}
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">&nbsp;</td>
                     <td id="progress-table-data">$TtlCrsCrd</td>

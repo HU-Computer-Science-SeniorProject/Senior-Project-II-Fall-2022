@@ -7,7 +7,7 @@ export function MatriculationHome() {
         { title: "Processing", link: "/matriculation/processing" },
         { title: "Pin Distribution", link: "/matriculation/pin-distribution" },
         { title: "Error Resolution", link: "/matriculation/error-resolution" },
-        { title: "Graduation Progressing", link: "/matriculation/graduation-progress" },
+        { title: "Graduation Progress", link: "/matriculation/graduation-progress" },
     ];
 
     const advising_routes = [
