@@ -5,7 +5,7 @@ import "./MatriculationHome.css";
 export function MatriculationHome() {
     const registration_routes = [
         { title: "Processing", link: "/matriculation/processing" },
-        { title: "Pin Distribution", link: "/matriculation/pin-distribution" },
+        { title: "Pin Distribution", link: "/matriculation-pin" },
         { title: "Error Resolution", link: "/matriculation/error-resolution" },
         { title: "Graduation Progress", link: "/matriculation/graduation-progress" },
     ];

@@ -22,10 +22,13 @@
     padding: 10px;
 }
 
-.instructions{
+.confirmation{
     font-size: 27px;
     padding: 20px;
     line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nav-buttons{
@@ -34,7 +37,7 @@
     justify-content: center;
 }
 
-#button{
+#request, #view{
     display: flex;
     align-items: center;
     justify-content: center;
