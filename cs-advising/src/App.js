@@ -5,6 +5,9 @@ import { GraduationApplication } from "./Team_Ace/@calmdaysamuel/GraduationAppli
 import { MatriculationHome } from "./CodeCrew/@c-admas18/MatriculationHome";
 import { AdvisorMeeting } from "./CodeCrew/@c-admas18/AdvisorMeeting";
 import { Home } from "./CodeCrew/@c-admas18/Home";
+import { PinIndex } from "./Pin-Distribution/Pages/pin-index";
+import { PinRequestConfirmation } from "./Pin-Distribution/Pages/confirmation";
+import { PinView } from "./Pin-Distribution/Pages/view_pins";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,19 @@ const router = createBrowserRouter([
     path: "/matriculation-advisormeeting",
     element: <AdvisorMeeting />,
   },
+  {
+    path: "/matriculation-pin",
+    element: <PinIndex />,
+  },
+  {
+    path: "/matriculation-pin-request-confirmation",
+    element: <PinRequestConfirmation />,
+  },
+  {
+    path: "/matriculation-pin-view-pins",
+    element: <PinView />,
+  },
+
 ]);
 
 function App() {
