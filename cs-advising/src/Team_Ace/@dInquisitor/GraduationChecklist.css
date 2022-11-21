@@ -1,10 +1,15 @@
 .page-body {
-    padding: 30px
+  padding: 30px;
 }
 
 .checklist {
-    padding-top: 32px;
-    padding-left: 15px;
+  padding-top: 32px;
+  padding-left: 15px;
+
+  line-height: 1.6em;
+  background-color: white;
+  margin-top: 12px;
+  padding: 16px;
 }
 
 .container {
@@ -43,7 +48,16 @@
 .container input:checked ~ .checkmark {
   background-color: #003a63;
 }
+.if {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 16px;
+  color: white;
 
+  background-color: #003a63;
+
+  padding: 16px;
+}
 .checkmark:after {
   content: "";
   position: absolute;

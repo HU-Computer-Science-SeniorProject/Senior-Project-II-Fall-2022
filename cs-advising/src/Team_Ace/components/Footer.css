@@ -2,14 +2,16 @@
   display: flex;
   gap: 32px;
   padding: 12px;
-  background-color:  #020563;
+  background-color: #003a63;
   position: sticky;
   bottom: 0px;
+  font-family: "Inter", sans-serif;
   justify-content: center;
 }
 
 .link {
   font-size: 18px;
+  font-family: "Inter", sans-serif;
   font-weight: 800;
   color: white;
 }

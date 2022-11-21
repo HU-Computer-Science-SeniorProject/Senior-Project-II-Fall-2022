@@ -7,8 +7,9 @@ export function GraduationStatus({ isAdvisor, student }) {
   return (
     <div>
       <Header />
-      { isAdvisor && (<AdvisorView/>) }
-      { !isAdvisor && student && (<StudentView student={student}/>) }
+      <StudentView student={student} />
+      {/* {isAdvisor && <AdvisorView />}
+      {!isAdvisor && student && <StudentView student={student} />} */}
       <Footer />
     </div>
   );

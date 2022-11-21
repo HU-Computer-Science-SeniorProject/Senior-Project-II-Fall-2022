@@ -5,30 +5,44 @@
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
   border-radius: 1000px;
 }
 
 .header_bottom {
   padding: 12px;
-  background-color: #bc1919;
+  background-color: #e51937;
   display: flex;
   gap: 16px;
+  font-family: "Inter", sans-serif;
   justify-content: center;
 }
 
 .header_top {
   padding: 12px;
-  background-color: #020563;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  background-color: #003a63;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.logo_img {
+  flex-shrink: 0;
+  flex-basis: 1;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100px;
+}
 .header_title {
   font-weight: 900;
-  font-size: 45px;
+  font-size: 28px;
   color: white;
-  font-family: "Georgia";
+  font-family: "Inter", sans-serif;
   text-align: center;
 }
 .header {
   position: sticky;
   top: 0px;
+  font-family: "Inter", sans-serif;
 }

@@ -10,21 +10,23 @@ export function GraduationChecklist() {
     "When approved by CEA for graduation, complete the university's graduation application via BisonWeb",
     "Schedule another meeting with your advisor to confirm that you are on track for graduation",
     "If on any financial holds, contact the Bursar's office to clear your holds",
-    "Schedule your exit interview with Dr. Harry Keeling ",
+    "Schedule your exit interview with your Academic Advisor",
   ];
   return (
     <div>
       <Header />
       <div className="page-body">
-        <h2>Ensure checklist is completed to be eligible to graduate</h2>
+        <h2 className="if">
+          Ensure checklist is completed to be eligible to graduate
+        </h2>
         <div className="checklist">
-        {checklistItems.map((item, idx) => (
-          <label class="container" key={idx}>
-            {item}
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-        ))}
+          {checklistItems.map((item, idx) => (
+            <label class="container" key={idx}>
+              {item}
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          ))}
         </div>
       </div>
       <Footer />

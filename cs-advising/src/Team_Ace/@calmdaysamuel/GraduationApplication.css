@@ -1,0 +1,45 @@
+.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 16px;
+  color: white;
+
+  background-color: #003a63;
+
+  padding: 16px;
+}
+
+.info {
+  line-height: 1.6em;
+  background-color: white;
+  margin-top: 12px;
+  padding: 16px;
+}
+
+.content {
+  margin: 48px auto;
+  max-width: 800px;
+}
+
+.aa {
+  font-weight: 900;
+  display: block;
+  font-size: 18px;
+  color: #002a47;
+  font-family: "Inter", sans-serif;
+  margin-top: 12px;
+  line-height: 1.6em;
+  transition: 0.1s ease-in-out color;
+}
+
+.aa::after {
+  content: "→";
+  font-weight: 900;
+  padding-left: 8px;
+}
+
+.aa:hover {
+  text-decoration: underline;
+  color: #edc054;
+  transition: 0.1s ease-in-out color;
+}

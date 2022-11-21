@@ -1,18 +1,26 @@
-.grad_routes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ghr {
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px;
   font-size: 20px;
-  box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px 0px,
-    rgb(61 59 53 / 16%) 0px 0px 0px 1px, rgb(61 59 53 / 8%) 0px 2px 5px 0px;
-  border: 0px;
-  border-radius: 8px;
-  padding: 8px;
-  background-color: rgb(255, 255, 255);
+  display: block;
+  font-weight: 600;
+  transition: 0.1s ease-in-out background-color;
+}
+.ghri {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+.ghr:hover {
+  cursor: pointer;
+  background-color: #edc054;
+  transition: 0.1s ease-in-out background-color;
 }
 .grad_home_routes {
   margin-top: 24px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 16px;
 }

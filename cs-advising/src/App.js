@@ -8,6 +8,9 @@ import { Home } from "./CodeCrew/@c-admas18/Home";
 import { PinIndex } from "./Pin-Distribution/Pages/pin-index";
 import { PinRequestConfirmation } from "./Pin-Distribution/Pages/confirmation";
 import { PinView } from "./Pin-Distribution/Pages/view_pins";
+import { GraduationChecklist } from "./Team_Ace/@dInquisitor/GraduationChecklist";
+import { PartTimeRegistration } from "./Team_Ace/@RainbowMan1(nikesh)/PartTimeRegistration";
+import { GraduationStatus } from "./Team_Ace/@aayush/GraduationStatus";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +22,20 @@ const router = createBrowserRouter([
     element: <GraduationHome />,
   },
   {
+    path: "/graduation-checlist",
+    element: <GraduationChecklist />,
+  },
+  {
     path: "/graduation-application",
     element: <GraduationApplication />,
+  },
+  {
+    path: "/graduation-status",
+    element: <GraduationStatus />,
+  },
+  {
+    path: "/graduation-part-time",
+    element: <PartTimeRegistration />,
   },
   {
     path: "/matriculation",
@@ -42,7 +57,6 @@ const router = createBrowserRouter([
     path: "/matriculation-pin-view-pins",
     element: <PinView />,
   },
-
 ]);
 
 function App() {

@@ -8,3 +8,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+body {
+  background-color: #f2f2f2;
+}
