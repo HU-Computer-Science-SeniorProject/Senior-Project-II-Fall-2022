@@ -17,8 +17,9 @@
 }
 
 .header_top {
-  padding: 12px;
+  padding: 3px;
   background-color: #020563;
+  height: calc(100% - 5px);
 }
 
 .header_title {
@@ -31,4 +32,8 @@
 .header {
   position: sticky;
   top: 0px;
+}
+
+.logo_img {
+   width: 20%;
 }
