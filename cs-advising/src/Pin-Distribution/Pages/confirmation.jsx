@@ -1,16 +1,17 @@
 import { Header } from "../../Team_Ace/components/Header";
 import { Footer } from "../../Team_Ace/components/Footer";
+import { MatriculationSidebar } from "../../CodeCrew/Components/MatriculationSidebar";
+
 import "../Styles/confirmation.css";
 import "../../CodeCrew/Components/MatriculationHome.css";
 /**import "./MatriculationHome.css";**/
 export function PinRequestConfirmation() {
   return (
     <div className="gh">
-        <Header />
+          <Header />
+          <MatriculationSidebar />
+          <div className="gh_body">
         <div className="container">
-            <div className="menu-placeholder">
-                <p>*side menu placeholder</p>
-            </div>
             <div className="instruction-container">
                 <h1>Pin Distribution</h1>
                 <div className="confirmation">
@@ -22,7 +23,8 @@ export function PinRequestConfirmation() {
                     <a id="button" href="/matriculation-pin-view-pins">VIEW MY PINS</a>
                 </div>
             </div>
-        </div>
+              </div>
+              </div>
         <Footer />
     </div>
   );

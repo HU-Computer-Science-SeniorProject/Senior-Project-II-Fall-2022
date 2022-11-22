@@ -1,11 +1,13 @@
 import { Header } from "../../Team_Ace/components/Header";
 import { Footer } from "../../Team_Ace/components/Footer";
+import { MatriculationSidebar } from "../../CodeCrew/Components/MatriculationSidebar";
 import "../../CodeCrew/Components/MatriculationHome.css";
 
 export function AdvisorMeeting() {
   return (
     <div className="gh">
       <Header />
+      <MatriculationSidebar />
       <div className="gh_body">
         <div className="matric_title">Schedule Advisor Meeting</div>
          <div className="matric_body"> Please find your advisor based on the first letter of your LAST name and click on their name to make an appointment</div>
