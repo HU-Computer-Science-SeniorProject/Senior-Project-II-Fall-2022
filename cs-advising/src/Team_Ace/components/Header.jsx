@@ -21,7 +21,7 @@ export function Header() {
   return (
     <div className="header">
       <div className="header_top">
-        <img className="logo_img" src={Hulogo} alt="CS Advising" size="50%"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <img className="logo_img" src={Hulogo} alt="CS Advising" width="160" height="75"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         <div className="header_title">Computer Science Advising</div>
         <div className="headaer_login"></div>
       </div>

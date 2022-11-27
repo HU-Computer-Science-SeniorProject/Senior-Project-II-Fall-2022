@@ -95,6 +95,11 @@ a {
   font-family: "Georgia";
   
 }
+a:hover {
+  color: #bc1919;
+  text-decoration: none; 
+
+}
 p{
   color: black;
   font-weight: 400;
