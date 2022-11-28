@@ -1,6 +1,6 @@
 import { Header } from "../Team_Ace/components/Header";
 import { Footer } from "../Team_Ace/components/Footer";
-
+import "./CareerInfo.css";
 
 export function CareerInfo() {
 
