@@ -11,6 +11,12 @@ import { PinView } from "./Pin-Distribution/Pages/view_pins";
 import { GraduationChecklist } from "./Team_Ace/@dInquisitor/GraduationChecklist";
 import { PartTimeRegistration } from "./Team_Ace/@RainbowMan1(nikesh)/PartTimeRegistration";
 import { GraduationStatus } from "./Team_Ace/@aayush/GraduationStatus";
+import { PostGraduateHome } from "./Team MVP/Post-Grad-home";
+import { ExitInterview } from "./Team MVP/ExitInterview";
+import { AlumniInfo } from "./Team MVP/AlumniInfo";
+import { ConnectAlumni } from "./Team MVP/ConnectAlumni";
+import { CareerInfo } from "./Team MVP/CareerInfo";
+import { AlumniCommunication} from "./Team MVP/AlumniCommunication";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +63,32 @@ const router = createBrowserRouter([
     path: "/matriculation-pin-view-pins",
     element: <PinView />,
   },
+  {
+    path: "/postgraduate",
+    element: <PostGraduateHome/>,
+  },
+  {
+    path: "/exitinterview",
+    element: <ExitInterview/>,
+  },
+  {
+    path: "/AlumniInfo",
+    element: <AlumniInfo/>,
+  },
+  {
+    path: "/ConnectInfo",
+    element: <ConnectAlumni/>,
+  },
+  {
+    path: "/CareerInfo",
+    element: <CareerInfo/>,
+  },
+  {
+    path: "/AlumComm",
+    element: <AlumniCommunication/>,
+  },
+
+
 ]);
 
 function App() {

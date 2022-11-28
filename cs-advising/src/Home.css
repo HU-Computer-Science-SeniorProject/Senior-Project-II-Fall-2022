@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   gap: 16px;
 }
+.grad_home_routes {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 .gh_body {
   max-width: 800px;
   margin: auto;

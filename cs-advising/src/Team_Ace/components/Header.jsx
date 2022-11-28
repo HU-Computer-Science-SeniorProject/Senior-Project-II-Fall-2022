@@ -9,12 +9,10 @@ export function Header() {
       link: "BD",
     },
     {
-      title: "Team 4",
-      link: "BD",
+      title: "Graduation", link: "graduation",
     },
     {
-      title: "Graduation",
-      link: "graduation",
+      title: "Post-Graduate ", link: "/postgraduate",
     },
   ];
   return (
