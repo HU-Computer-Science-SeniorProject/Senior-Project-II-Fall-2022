@@ -12,7 +12,7 @@ export function PostGraduateHome() {
     {
       title: "Alumni Information",
       route: "/AlumniInfo",
-      info: "Howard Unverisity computer science department honors alumni involvment communication click here to find ways to stay connected.",
+      info: "Howard Unverisity computer science department honors alumni involvment communication click here to find ways to stay connected!",
     },
   ];
   return (
