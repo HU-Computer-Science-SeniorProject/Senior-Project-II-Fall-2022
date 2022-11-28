@@ -1,0 +1,39 @@
+.ghr {
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.1s ease-in-out background-color;
+}
+.ghri {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+.ghr:hover {
+  cursor: pointer;
+  background-color: #edc054;
+  transition: 0.1s ease-in-out background-color;
+}
+.post_grad_routes {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.gh_body {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 300px;
+}
+.main_gh_title {
+  font-size: 36px;
+  font-weight: 900;
+}
+/* .gh {
+  height: 100vh;
+} */
