@@ -1,19 +1,71 @@
 import { Header } from "../Team_Ace/components/Header";
 import { Footer } from "../Team_Ace/components/Footer";
+import AppleLogo from './Apple-Logo.png'
+
+
 
 
 export function CareerInfo() {
 
 
-
-
     return (
-        <div className="gh">
-          <Header />
-          <div className="gh_body">
-            <div className="main_gh_title">Graduate Career Information</div>
-          </div>
-          <Footer />
+      <div>
+      <Header />
+      <div className="content">
+        <div className="subtitle">Career Information</div>
+        <div className="info">
+          Here you can find popular companies that CEA Alumni are working for!
+          
         </div>
+
+        <div className="subtitle">
+          Apple, Inc.
+        </div>
+        <div className="ap-logo">
+        <img className="apple-logo" src={AppleLogo} alt="Apple Inc. Logo" height={55} width={98}/>
+      </div>
+        <div className="info">
+        Apple Inc. is an American multinational technology company headquartered in Cupertino, California, United States. 
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, 
+        as of June 2022, is the world's biggest company by market capitalization, the fourth-largest personal computer vendor by unit sales 
+        and second-largest mobile phone manufacturer. It is one of the Big Five American information 
+        technology companies, alongside Alphabet, Amazon, Meta, and Microsoft.
+          <a className="aa" href="https://www.apple.com/careers/us/">
+            Apple Careers Page
+          </a>
+          
+        
+        </div>
+
+        <div className="subtitle">
+          Google
+        </div>
+        <div className="info">
+        Google LLC is an American multinational technology company focusing on search engine technology, online advertising, 
+        cloud computing, computer software, quantum computing, e-commerce, artificial intelligence,[9] and consumer electronics. It has been 
+        referred to as "the most powerful company in the world"[10] and one of the world's most valuable brands due to its market dominance, 
+        data collection, and technological advantages in the area of artificial intelligence.
+          <a className="aa" href="https://careers.google.com/">
+            Google Careers Page
+          </a>
+        </div>
+
+        <div className="subtitle">
+          Google
+        </div>
+        <div className="info">
+        Google LLC is an American multinational technology company focusing on search engine technology, online advertising, 
+        cloud computing, computer software, quantum computing, e-commerce, artificial intelligence,[9] and consumer electronics. It has been 
+        referred to as "the most powerful company in the world"[10] and one of the world's most valuable brands due to its market dominance, 
+        data collection, and technological advantages in the area of artificial intelligence.
+          <a className="aa" href="https://careers.google.com/">
+            Google Careers Page
+          </a>
+        </div>
+
+       
+      </div>
+      <Footer />
+    </div>
       );
 }
