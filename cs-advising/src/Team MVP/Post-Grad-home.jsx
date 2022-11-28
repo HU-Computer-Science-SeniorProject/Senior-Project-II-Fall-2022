@@ -7,7 +7,7 @@ export function PostGraduateHome() {
     {
       title: "Exit Interview",
       route: "/exitinterview",
-      info: "Click here to fill out a post graduate interview where you can reflect on your undergraduate experience",
+      info: "Click here to fill out a post graduate interview where you can reflect on your undergraduate experience!",
     },
     {
       title: "Alumni Information",
