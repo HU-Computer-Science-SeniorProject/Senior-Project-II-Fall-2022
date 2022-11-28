@@ -9,7 +9,7 @@ export function ConnectAlumni() {
       <div className="gh">
           <Header />
           <div className="gh_body">
-            <div className="main_gh_title">Connect With Alumni</div>
+            <div className="main_gh_title">Connect With Alumni!</div>
             <h3>Harry Keeling Linkden</h3>
             <iframe src="https://www.linkedin.com/in/harry-keeling-235b1918/" height="200" width="300" title="Harry Keeling LinkedIn"></iframe>
           </div>
