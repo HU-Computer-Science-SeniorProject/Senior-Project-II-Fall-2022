@@ -1,0 +1,57 @@
+.connect_alumni_title {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .background_img {
+    background-image: url('https://static01.nyt.com/images/2019/12/01/arts/15surfacing-howard-03/15surfacing-howard-03-superJumbo.jpg');
+    background-size: cover; 
+    height: 480px; 
+    padding-top: 150px;
+    color: white;
+    font-size: 50px;
+    font-weight: 970;
+  }
+
+  .paragraph_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .connect_via_linkedin {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+  }
+
+  .paragraph_linkedin {
+    text-align: center;
+    padding: 70px;
+    background-color: #003A63;
+    color: white;
+    border: 2px solid #003A63;
+    border-radius: 5px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    margin-right: 500px ;
+    font-size: 30px;
+  }
+
+  .button_linkedin {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background: #E51937;
+    border: 2px solid #E51937;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .button_linkedin:hover {
+    background-color: #d15f70;
+    color: white;
+  }

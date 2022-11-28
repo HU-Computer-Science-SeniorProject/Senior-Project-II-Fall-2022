@@ -4,6 +4,7 @@ import AppleLogo from './Apple-Logo.png'
 
 
 
+import "./CareerInfo.css";
 
 export function CareerInfo() {
 
