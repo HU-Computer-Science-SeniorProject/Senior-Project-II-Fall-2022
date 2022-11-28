@@ -1,6 +1,8 @@
 import { Header } from "../Team_Ace/components/Header";
 import { Footer } from "../Team_Ace/components/Footer";
 import AppleLogo from './Apple-Logo.png'
+import GoogleLogo from './Google-Logo.jpeg'
+import MicrosoftLogo from './Microsoft-Logo.png'
 
 
 
@@ -41,6 +43,9 @@ export function CareerInfo() {
         <div className="subtitle">
           Google
         </div>
+        <div className="gg-logo">
+        <img className="google-logo" src={GoogleLogo} alt="Google Company Logo" height={55} width={98}/>
+      </div>
         <div className="info">
         Google LLC is an American multinational technology company focusing on search engine technology, online advertising, 
         cloud computing, computer software, quantum computing, e-commerce, artificial intelligence,[9] and consumer electronics. It has been 
@@ -52,15 +57,19 @@ export function CareerInfo() {
         </div>
 
         <div className="subtitle">
-          Google
+          Microsoft
         </div>
+        <div className="mc-logo">
+        <img className="micro-logo" src={MicrosoftLogo} alt="Microsoft Company Logo" height={55} width={98}/>
+      </div>
         <div className="info">
-        Google LLC is an American multinational technology company focusing on search engine technology, online advertising, 
-        cloud computing, computer software, quantum computing, e-commerce, artificial intelligence,[9] and consumer electronics. It has been 
-        referred to as "the most powerful company in the world"[10] and one of the world's most valuable brands due to its market dominance, 
-        data collection, and technological advantages in the area of artificial intelligence.
-          <a className="aa" href="https://careers.google.com/">
-            Google Careers Page
+        Microsoft Corporation is an American multinational technology corporation producing computer software, consumer 
+        electronics, personal computers, and related services headquartered at the Microsoft Redmond campus located in 
+        Redmond, Washington, United States. Its best-known software products are the Windows line of operating systems, the 
+        Microsoft Office suite, and the Internet Explorer and Edge web browsers. Its flagship hardware products are the Xbox video 
+        game consoles and the Microsoft Surface lineup of touchscreen personal computers.
+          <a className="aa" href="https://careers.microsoft.com/us/en/">
+            Microsoft Careers Page
           </a>
         </div>
 
