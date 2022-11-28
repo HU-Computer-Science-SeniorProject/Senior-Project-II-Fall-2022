@@ -11,7 +11,7 @@ export function AlumniCommunication() {
   };
 
 
-    return (
+    return ( 
         <div className="gh">
           <Header />
           <div className="gh_body">
