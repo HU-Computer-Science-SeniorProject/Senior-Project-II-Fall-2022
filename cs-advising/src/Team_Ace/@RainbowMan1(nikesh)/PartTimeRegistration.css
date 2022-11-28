@@ -1,0 +1,42 @@
+.pt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 24px;
+  padding-top: 0px;
+}
+.mh {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 24px;
+}
+
+.mh h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 16px;
+  color: white;
+
+  background-color: #003a63;
+
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.pt-form input,
+.pt-form select {
+  padding: 8px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.pt-form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  background-color: #074276;
+  color: white;
+}
+.pt-form input[type="submit"]:hover {
+  background-color: #032e53;
+}
