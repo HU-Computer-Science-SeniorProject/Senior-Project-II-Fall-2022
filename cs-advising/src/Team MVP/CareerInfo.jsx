@@ -5,9 +5,9 @@ import GoogleLogo from './Google-Logo.jpeg'
 import MicrosoftLogo from './Microsoft-Logo.png'
 
 import "./CareerInfo.css";
+/* global $ */
 
 export function CareerInfo() {
-
     return (
       <div>
       <Header />
@@ -69,6 +69,7 @@ export function CareerInfo() {
             Microsoft Careers Page
           </a>
         </div>
+        
 
        <div className="subtitle">
         Share Your Career Experience
@@ -85,6 +86,7 @@ export function CareerInfo() {
 
         </div>
         
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
       </div>
       <Footer />
     </div>
