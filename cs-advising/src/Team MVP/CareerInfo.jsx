@@ -74,8 +74,9 @@ export function CareerInfo() {
        <div className="subtitle">
         Share Your Career Experience
         </div>
+        <br></br>
         <div className='form'>
-          <h5>Add Comment</h5>
+          <h5>Add Comment</h5><br></br>
           Name: <input type="text" id="name"/><br/><br/>
           Date: <input type="date" id="date"/><br/><br/>
           Body: <textarea rows="5" col="50" id="bodyText"></textarea><br/><br/>
