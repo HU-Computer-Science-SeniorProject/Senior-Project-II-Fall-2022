@@ -11,6 +11,7 @@ import { PinView } from "./Pin-Distribution/Pages/view_pins";
 import { GraduationChecklist } from "./Team_Ace/@dInquisitor/GraduationChecklist";
 import { PartTimeRegistration } from "./Team_Ace/@RainbowMan1(nikesh)/PartTimeRegistration";
 import { GraduationStatus } from "./Team_Ace/@aayush/GraduationStatus";
+import {withAuthenticator} from "@aws-amplify/ui-react";
 
 const router = createBrowserRouter([
   {
@@ -63,4 +64,8 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App;
+export default withAuthenticator(App);
+
+
+
+

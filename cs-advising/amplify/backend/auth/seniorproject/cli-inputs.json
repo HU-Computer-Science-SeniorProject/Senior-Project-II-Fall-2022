@@ -3,8 +3,8 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "seniordbcddd36",
-    "userPoolName": "seniorproject2",
+    "resourceNameTruncated": "senior3c201db0",
+    "userPoolName": "seniorproject",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -24,18 +24,16 @@
       "Requires Symbols",
       "Requires Uppercase"
     ],
-    "requiredAttributes": [
-      "email"
-    ],
+    "requiredAttributes": [],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "seniordbcddd36_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "senior3c201db0_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "dbcddd36",
-    "resourceName": "seniorproject2",
+    "sharedId": "3c201db0",
+    "resourceName": "seniorproject",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
     "usernameAttributes": [
