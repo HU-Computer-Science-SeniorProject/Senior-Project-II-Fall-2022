@@ -15,7 +15,9 @@ export function PinView() {
             <div className="instruction-container">
                 <h1>Pin Distribution</h1>
                 <div className="pin-table">
-                    <p>*table placeholder*</p>
+                    <p>Fall 2022 - 232345</p><br>
+                    </br>
+                    <p>Spring 2023 - 565678</p>
                 </div>
                 <div className="nav-buttons">
                     <a id="button" href="/matriculation">MATRICULATION HOME</a>

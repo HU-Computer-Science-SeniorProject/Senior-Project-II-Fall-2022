@@ -37,6 +37,15 @@
     justify-content: center;
 }
 
+.pin-table{
+    text-align: center;
+    height: 300px;
+    padding: 50px;
+    font-size: 30px;
+}
+
+
+
 #request, #view{
     display: flex;
     align-items: center;
