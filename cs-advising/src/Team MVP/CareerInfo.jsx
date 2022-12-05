@@ -4,13 +4,10 @@ import AppleLogo from './Apple-Logo.png'
 import GoogleLogo from './Google-Logo.jpeg'
 import MicrosoftLogo from './Microsoft-Logo.png'
 
-
-
 import "./CareerInfo.css";
-import CareerInfo from "./CareerInfo.js";
+import "./CareerInfo.js";
 
 export function CareerInfo() {
-
 
     return (
       <div>
@@ -88,10 +85,8 @@ export function CareerInfo() {
         <div id="container">
 
         </div>
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src='./CareerInfo.js' type='text/javascript'></script>
-
       </div>
       <Footer />
     </div>
