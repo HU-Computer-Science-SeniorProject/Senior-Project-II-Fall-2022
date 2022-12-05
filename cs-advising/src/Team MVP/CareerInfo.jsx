@@ -3,6 +3,7 @@ import { Footer } from "../Team_Ace/components/Footer";
 import AppleLogo from './Apple-Logo.png'
 import GoogleLogo from './Google-Logo.jpeg'
 import MicrosoftLogo from './Microsoft-Logo.png'
+import OracleLogo from './Oracle-Logo.png'
 
 import "./CareerInfo.css";
 
@@ -66,6 +67,23 @@ export function CareerInfo() {
         game consoles and the Microsoft Surface lineup of touchscreen personal computers.
           <a className="aa" href="https://careers.microsoft.com/us/en/">
             Microsoft Careers Page
+          </a>
+        </div>
+
+        <div className="subtitle">
+          Oracle
+        </div>
+        <div className="or-logo">
+        <img className="oracle-logo" src={OracleLogo} alt="Oracle Company Logo" height={55} width={98}/>
+      </div>
+        <div className="info">
+        Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas.[5] 
+        In 2020, Oracle was the third-largest software company in the world by revenue and market capitalization.[6] The company 
+        sells database software and technology (particularly its own brands), cloud engineered systems, and enterprise software products, 
+        such as enterprise resource planning (ERP) software, human capital management (HCM) software, customer relationship management (CRM) 
+        software (also known as customer experience), enterprise performance management (EPM) software, and supply chain management (SCM) software.[7]
+          <a className="aa" href="https://www.oracle.com/corporate/careers/">
+            Oracle Careers Page
           </a>
         </div>
         
