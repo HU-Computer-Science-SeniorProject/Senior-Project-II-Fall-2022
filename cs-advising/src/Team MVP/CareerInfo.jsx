@@ -5,7 +5,6 @@ import GoogleLogo from './Google-Logo.jpeg'
 import MicrosoftLogo from './Microsoft-Logo.png'
 
 import "./CareerInfo.css";
-/* global $ */
 
 export function CareerInfo() {
     return (
