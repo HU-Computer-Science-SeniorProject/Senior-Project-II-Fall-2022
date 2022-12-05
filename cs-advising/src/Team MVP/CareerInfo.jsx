@@ -7,6 +7,7 @@ import MicrosoftLogo from './Microsoft-Logo.png'
 
 
 import "./CareerInfo.css";
+import CareerInfo from "./CareerInfo.js";
 
 export function CareerInfo() {
 
@@ -73,7 +74,24 @@ export function CareerInfo() {
           </a>
         </div>
 
-       
+       <div className="subtitle">
+        Share Your Career Experience
+        </div>
+        <div className='form'>
+          <h5>Add Comment</h5>
+          Name: <input type="text" id="name"/><br/><br/>
+          Date: <input type="date" id="date"/><br/><br/>
+          Body: <textarea rows="5" col="50" id="bodyText"></textarea><br/><br/>
+          <input type="button" id="addComment" value="Add Comment"/>
+        </div>
+
+        <div id="container">
+
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src='./CareerInfo.js' type='text/javascript'></script>
+
       </div>
       <Footer />
     </div>
