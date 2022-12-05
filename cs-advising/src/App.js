@@ -11,11 +11,46 @@ import { PinView } from "./Pin-Distribution/Pages/view_pins";
 import { GraduationChecklist } from "./Team_Ace/@dInquisitor/GraduationChecklist";
 import { PartTimeRegistration } from "./Team_Ace/@RainbowMan1(nikesh)/PartTimeRegistration";
 import { GraduationStatus } from "./Team_Ace/@aayush/GraduationStatus";
+import { GraduationAdminViewHome } from "./Team_Ace/admin_ui/GraduationAdminViewHome";
+import { GraduationClearanceAdminViewHome } from "./Team_Ace/admin_ui/GraduationClearanceAdminView";
+import { GraduationApplicationAdminViewHome } from "./Team_Ace/admin_ui/GraduationApplicationAdminView";
+import { GraduationStatusAdminViewHome } from "./Team_Ace/admin_ui/GraduationStatusAdminView";
+import { PartTimeApplicationAdminViewHome } from "./Team_Ace/admin_ui/PartTimeApplicationAdminView";
+import { AdminHome } from "./Team_Ace/admin_ui/AdminHome";
+import { LoginPage } from "./Team_Ace/admin_ui/LoginPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/",
+    element: <LoginPage />,
+  },
+  {
+    path: "/admin",
+    element: <AdminHome />,
+  },
+  {
+    path: "/admin/graduation",
+    element: <GraduationAdminViewHome />,
+  },
+  {
+    path: "/admin/graduation/graduation-checlist",
+    element: <GraduationClearanceAdminViewHome />,
+  },
+  {
+    path: "/admin/graduation/graduation-application",
+    element: <GraduationApplicationAdminViewHome />,
+  },
+  {
+    path: "/admin/graduation/graduation-status",
+    element: <GraduationStatusAdminViewHome />,
+  },
+  {
+    path: "/admin/graduation/graduation-part-time",
+    element: <PartTimeApplicationAdminViewHome />,
   },
   {
     path: "/graduation",

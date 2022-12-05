@@ -25,10 +25,12 @@
   margin-bottom: 24px;
 }
 .pt-form input,
-.pt-form select {
+.pt-form select,
+.pt-form textarea {
   padding: 8px;
   border: 1px solid black;
   outline: none;
+  resize: none;
 }
 
 .pt-form input[type="submit"] {

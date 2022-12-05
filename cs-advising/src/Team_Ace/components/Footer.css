@@ -3,8 +3,9 @@
   gap: 32px;
   padding: 12px;
   background-color: #003a63;
-  position: sticky;
+  position: fixed;
   bottom: 0px;
+  width: 100%;
   font-family: "Inter", sans-serif;
   justify-content: center;
 }
@@ -14,4 +15,8 @@
   font-family: "Inter", sans-serif;
   font-weight: 800;
   color: white;
+}
+
+.link:hover {
+  color: #edc054;
 }

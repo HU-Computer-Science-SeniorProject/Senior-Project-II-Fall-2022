@@ -1,8 +1,8 @@
 import "./Header.css";
 import Hulogo from "../../CodeCrew/@c-admas18/Hulogo.png";
-export function Header() {
+export function Header(props) {
   const routes = [
-    { title: "Home", link: "/" },
+    { title: "Home", link: "/home" },
     { title: "Matriculation", link: "/matriculation" },
     {
       title: "Team 2",
@@ -14,7 +14,7 @@ export function Header() {
     },
     {
       title: "Graduation",
-      link: "graduation",
+      link: "/graduation",
     },
   ];
   return (
@@ -49,18 +49,22 @@ export function Header() {
             </g>
           </svg>
         </div>
-        <div className="header_title">Computer Science Advising</div>
+        <div className="header_title">
+          {props.headerLabel ?? "Computer Science Advising"}
+        </div>
         <div className="headaer_login"></div>
       </div>
-      <div className="header_bottom">
-        {routes.map((route) => {
-          return (
-            <a href={route.link} className="header_route">
-              {route.title}
-            </a>
-          );
-        })}
-      </div>
+      {props.showExtra === false ? null : (
+        <div className="header_bottom">
+          {routes.map((route) => {
+            return (
+              <a href={route.link} className="header_route">
+                {route.title}
+              </a>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
