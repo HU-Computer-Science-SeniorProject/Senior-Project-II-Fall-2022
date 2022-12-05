@@ -60,8 +60,13 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return <RouterProvider router={router} />;
+function App({signOut, user}) {
+  return (
+      <div className="App">
+        {user.attributes.email} <button onClick={signOut}>Sign out</button>
+        <RouterProvider router={router} />;
+      </div>
+)
 }
 
 export default withAuthenticator(App);
