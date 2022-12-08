@@ -9,6 +9,7 @@ import { GraduationProgress } from "./CodeCrew/GraduationProgress/GraduationProg
 import { PinIndex } from "./Pin-Distribution/Pages/pin-index";
 import { PinRequestConfirmation } from "./Pin-Distribution/Pages/confirmation";
 import { PinView } from "./Pin-Distribution/Pages/view_pins";
+import { ErrorForm } from "./CodeCrew/ErrorResolution/error-res";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     path: "/matriculation-pin-view-pins",
     element: <PinView />,
   },
+  {
+    path: "/matriculation/error-resolution",
+    element: <ErrorForm />,
+  }
 ]);
 
 function App() {

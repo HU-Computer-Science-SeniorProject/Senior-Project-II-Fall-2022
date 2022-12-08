@@ -6,11 +6,11 @@ export function Header() {
     { title: "Home", link: "/" },
     { title: "Matriculation", link: "/matriculation" },
     {
-      title: "Team 2",
+      title: "Post-Grad Process",
       link: "BD",
     },
     {
-      title: "Team 4",
+      title: "Freshman Issues",
       link: "BD",
     },
     {
