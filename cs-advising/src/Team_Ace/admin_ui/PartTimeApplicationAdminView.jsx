@@ -35,7 +35,7 @@ const PdfModal = ({ show, onHide }) => {
       </div>
       <div className="modal-footer">
       <button className="sign-button" onClick={onHide}>
-          Sign
+          Sign and Send
         </button>
         <button className="close-button" onClick={onHide}>
           Close
