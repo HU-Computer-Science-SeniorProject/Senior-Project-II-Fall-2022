@@ -1,7 +1,7 @@
 import { DataGrid } from '@mui/x-data-grid';
 import { GraduationEligibleGrid } from './GraduationEligibleGrid';
 import { useState } from 'react';
-import { Button, Grid } from '@mui/material';
+import { Button } from '@mui/material';
 
 const columns = [
   {
