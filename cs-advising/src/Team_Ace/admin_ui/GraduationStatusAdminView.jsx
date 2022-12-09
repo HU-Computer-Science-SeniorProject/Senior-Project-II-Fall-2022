@@ -1,13 +1,12 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { AdvisorView } from "../@aayush/AdvisorView";
 
 export function GraduationStatusAdminViewHome() {
   return (
     <div className="gh">
       <Header showExtra={false} headerLabel="CS Advising Admin Panel" />
-      <div className="gh_body">
-        <div className="main_gh_title">Graduation Status</div>
-      </div>
+        <AdvisorView />
       <Footer />
     </div>
   );

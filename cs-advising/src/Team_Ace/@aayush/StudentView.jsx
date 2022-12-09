@@ -1,5 +1,7 @@
 import { DataGrid } from '@mui/x-data-grid';
 import { GraduationEligibleGrid } from './GraduationEligibleGrid';
+import { useState } from 'react';
+import { Button } from '@mui/material';
 
 const columns = [
   {
@@ -26,6 +28,8 @@ const columns = [
 const rows = [
   { id: 'CS 364', name: 'Data Structures and Algorithms', credits: 3 },
   { id: 'CS 494', name: 'Senior Project II', credits: 3 },
+  { id: 'CS 354', name: 'Computer Science III', credits: 3 },
+  { id: 'CS 135', name: 'Computer Science I', credits: 4 },
 ];
 
 const studentDetails = [
@@ -33,25 +37,32 @@ const studentDetails = [
 ];
 
 export function StudentView({ student }) {
+  const [eligibleForGraduation, setEligibleForGraduation] = useState(true);
   return (
     <div>
-      {student && (
-        <div>
-          <h1 style={{textAlign: 'center'}}>Congratulations! You are eligible for Graduation.</h1>
-          <GraduationEligibleGrid rows={studentDetails} height={150}/>
+      <button onClick={() => setEligibleForGraduation(!eligibleForGraduation)}>
+        {eligibleForGraduation ? 'See Ineligible View' : 'See Eligible View'}
+      </button>
+      {eligibleForGraduation ? 
+      (
+        <div style={{textAlign: 'center'}}>
+          <h1 style={{ marginBottom: '20px'}}>Congratulations! You are eligible for Graduation.</h1>
+          <GraduationEligibleGrid rows={studentDetails} height={175}/>
+          <Button href="/graduation-application" variant="contained" style={{margin: 'auto', marginTop: '20px', alignContent: 'center'}} >Apply for Graduation</Button>
         </div>
-      )}
-      <div>
-        <h1 style={{textAlign: 'center'}}>Incomplete Credits for Graduation</h1>
-        <h2>Courses not taken yet:</h2>
+      ) : (
+        <div style={{textAlign: 'center'}}>
+        <h1 style={{marginBottom: '20px'}}>Incomplete Credits/Courses for Graduation</h1>
         <DataGrid
           rows={rows}
           columns={columns}
           pageSize={10}
           rowsPerPageOptions={[10]}
-          style={{ height: 500, width: '55%', margin: 'auto' }}
+          style={{ height: 325, width: '55%', margin: 'auto' }}
         />
       </div>
+      )
+    }
     </div>
   );
 }
