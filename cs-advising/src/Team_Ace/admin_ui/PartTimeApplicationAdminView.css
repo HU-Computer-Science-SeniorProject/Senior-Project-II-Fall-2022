@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #eee;
+  }
+  
+  th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .modal-content {
+    text-align: center;
+  }
+  
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+  
+  .modal-body embed {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .modal-footer {
+    text-align: center;
+  }
+  
+  button{
+    margin:5px;
+  }
+  button.close-button {
+    background-color: #aaa;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button.sign-button {
+    background-color: rgb(47, 197, 2);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
