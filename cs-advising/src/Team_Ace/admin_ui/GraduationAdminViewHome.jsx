@@ -8,11 +8,11 @@ export function GraduationAdminViewHome() {
       route: "/admin/graduation/graduation-status",
       info: "View students graduation status and completed courses",
     },
-    // {
-    //   title: "View Part Time Student Applications",
-    //   route: "/admin/graduation/graduation-part-time",
-    //   info: "View part time student applications and update application form",
-    // },
+    {
+      title: "View Part Time Student Applications",
+      route: "/admin/graduation/graduation-part-time",
+      info: "View part time student applications and update application form",
+    },
     {
       title: "Confirm Students Are Cleared For Graduation",
       route: "/admin/graduation/graduation-checlist",

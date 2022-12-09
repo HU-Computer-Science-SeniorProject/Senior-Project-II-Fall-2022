@@ -20,7 +20,7 @@ export function Header(props) {
   return (
     <div className="header">
       <div className="header_top">
-        <a className="logo_img" href="/graduation">
+        <a className="logo_img" href="/home">
           <svg
             viewBox="0 0 538 227"
             version="1.1"
