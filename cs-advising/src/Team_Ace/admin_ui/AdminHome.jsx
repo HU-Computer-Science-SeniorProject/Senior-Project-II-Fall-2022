@@ -8,21 +8,21 @@ export function AdminHome() {
       route: "/admin/graduation",
       info: "View and update student's graduation information and status. Update graduation status",
     },
-    {
-      title: "Team 1",
-      route: "/graduation-part-time",
-      info: "",
-    },
-    {
-      title: "Team 2",
-      route: "/graduation-checlist",
-      info: "",
-    },
-    {
-      title: "Team 3",
-      route: "/graduation-application",
-      info: "",
-    },
+    // {
+    //   title: "Team 1",
+    //   route: "/graduation-part-time",
+    //   info: "",
+    // },
+    // {
+    //   title: "Team 2",
+    //   route: "/graduation-checlist",
+    //   info: "",
+    // },
+    // {
+    //   title: "Team 3",
+    //   route: "/graduation-application",
+    //   info: "",
+    // },
   ];
   return (
     <div className="gh">

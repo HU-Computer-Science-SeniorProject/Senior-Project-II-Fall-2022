@@ -17,7 +17,6 @@
   font-family: "Inter", sans-serif;
   justify-content: center;
 }
-
 .header_top {
   padding: 12px;
   display: flex;
@@ -34,6 +33,7 @@
   width: 100%;
   max-width: 100px;
 }
+
 .header_title {
   font-weight: 900;
   font-size: 28px;
@@ -41,6 +41,7 @@
   font-family: "Inter", sans-serif;
   text-align: center;
 }
+
 .header {
   position: sticky;
   top: 0px;

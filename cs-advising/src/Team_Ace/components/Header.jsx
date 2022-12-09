@@ -5,11 +5,11 @@ export function Header(props) {
     { title: "Home", link: "/home" },
     { title: "Matriculation", link: "/matriculation" },
     {
-      title: "Team 2",
+      title: "Post Graduation",
       link: "BD",
     },
     {
-      title: "Team 4",
+      title: "Freshman Issues",
       link: "BD",
     },
     {
@@ -20,7 +20,7 @@ export function Header(props) {
   return (
     <div className="header">
       <div className="header_top">
-        <div className="logo_img">
+        <a className="logo_img" href="/graduation">
           <svg
             viewBox="0 0 538 227"
             version="1.1"
@@ -48,7 +48,7 @@ export function Header(props) {
               </g>
             </g>
           </svg>
-        </div>
+        </a>
         <div className="header_title">
           {props.headerLabel ?? "Computer Science Advising"}
         </div>
