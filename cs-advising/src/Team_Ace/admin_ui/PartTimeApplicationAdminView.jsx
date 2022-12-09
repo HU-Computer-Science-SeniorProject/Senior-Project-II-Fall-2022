@@ -34,6 +34,9 @@ const PdfModal = ({ show, onHide }) => {
         <embed src={pdf} type="application/pdf" />
       </div>
       <div className="modal-footer">
+      <button className="sign-button" onClick={onHide}>
+          Sign
+        </button>
         <button className="close-button" onClick={onHide}>
           Close
         </button>
