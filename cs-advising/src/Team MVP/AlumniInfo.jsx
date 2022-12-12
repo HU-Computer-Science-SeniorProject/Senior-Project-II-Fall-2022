@@ -15,12 +15,12 @@ export function AlumniInfo() {
           info: "Getting a job post graduate is the prime goal for every student upon graduating. Click here to see the amazing companies Almuni are working at.",
         },
         {
-            title: "Alumni Communication and Event Planning",
-            route: "/AlumComm",
-            info: "If you are an alumni interested in planning an event/ communicating with undergrad students click here.",
-          },
+          title: "Alumni Communication and Event Planning",
+          route: "/AlumComm",
+          info: "If you are an alumni interested in planning an event/ communicating with undergrad students click here.",
+        },
 
-      ];
+  ];
 
     return (
         <div className="gh">

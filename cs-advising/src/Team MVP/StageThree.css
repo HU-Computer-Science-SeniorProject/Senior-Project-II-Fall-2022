@@ -1,0 +1,10 @@
+.button_interview {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background: #E51937;
+    border: 2px solid #E51937;
+    border-radius: 10px;
+    font-weight: 600;
+  }

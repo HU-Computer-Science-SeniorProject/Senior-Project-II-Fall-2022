@@ -17,7 +17,8 @@ import { AlumniInfo } from "./Team MVP/AlumniInfo";
 import { ConnectAlumni } from "./Team MVP/ConnectAlumni";
 import { CareerInfo } from "./Team MVP/CareerInfo";
 import { AlumniCommunication} from "./Team MVP/AlumniCommunication";
-
+import { StageOne } from "./Team MVP/StageOne";
+import { StageThree } from "./Team MVP/StageThree";
 
 const router = createBrowserRouter([
   {
@@ -88,6 +89,15 @@ const router = createBrowserRouter([
     path: "/AlumComm",
     element: <AlumniCommunication/>,
   },
+  {
+    path: "/StageOne",
+    element: <StageOne/>,
+  },
+  {
+    path: "/StageThree",
+    element: <StageThree/>,
+  },
+
 
 
 ]);
