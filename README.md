@@ -12,8 +12,8 @@ Each team would take different functionality.
 
 ### Assigned Team: Bison Madness
 **Freshman Issues**
-- [ ] Transfer/International/Consortium/Summer School Student Credit Entry & Validation 
-- [ ] Form tracking and storage for international students (OPT & CPT)
+- [X] International/Consortium/Summer School Student Credit Entry & Validation 
+- [] Form tracking and storage for international students (OPT & CPT)
 - [x] Shared database
 - [x] Login page
 
