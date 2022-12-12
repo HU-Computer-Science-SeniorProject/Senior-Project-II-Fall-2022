@@ -37,7 +37,7 @@ return (
           })}
         </div>
         <section className="info">
-        During each interview, please have the three following:\n
+        During each interview, please have the three following:
         1. Student Transcript
         2. Student Checklist
         3. Student Folder
